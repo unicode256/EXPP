@@ -1,0 +1,87 @@
+/*.navbar_content, #leftside, #rightside, span {
+    border: 1px solid black;
+}*/
+
+html {
+    padding: 0;
+    margin: 0;
+    background-color: #f2f8ff;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 6px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar_content {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+}
+
+#leftside, #rightside {
+    width: 594px;/*исправить на 600*/
+}
+
+#leftside, #leftside span {
+    float: left;
+}
+
+#rightside, #rightside span {
+    float: right;
+}
+
+#rightside {
+    overflow: auto;
+    margin-top: 9px;
+}
+
+#leftside span, #rightside span {
+    display: block;
+    font-size: 1.1em;
+    font-weight: 100;
+    padding: 15px 10px 15px 10px;
+    cursor: pointer;
+}
+
+#rightside span {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+#leftside span:hover {
+    color: rgb(29, 202, 34);
+}
+
+#rightside #create_post span {
+    display: block;
+    padding: 0;
+    margin: 0;
+    float: left;
+}
+
+#rightside #location, #rightside #create_post{
+    color: rgb(29, 202, 34);
+    border-right: 1px solid black; 
+}
+
+#rightside #location:hover, #rightside #create_post:hover {
+    color: rgb(65, 226, 70);
+}
+
+#rightside #auth {
+    padding-right: 0;
+}
+
+#rightside #auth:hover {
+    color: rgb(29, 202, 34);
+}
