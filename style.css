@@ -53,8 +53,7 @@ body {
 #leftside span, #rightside span {
     display: block;
     font-size: 1.1em;
-    font-weight: 100;
-    padding: 15px 10px 15px 10px;
+    padding: 15px 10px 15px 0;
     cursor: pointer;
 }
 
@@ -98,33 +97,62 @@ body {
 
 /*стили для контента*/
 
-.content, .content span, .content .selector, .content .selector .selector_item {
-    border: 1px solid black;
+.content span, .content .selector, .content .selector .selector_item {
+    /*border: 1px solid black;*/
 }
 
 .content {
     width: 1200px;
     height: 1000px;
-    margin: 51px auto 0 auto;
+    margin: 81px auto 0 auto;
+    font-family: Helvetica;
 }
 
 .content .section_header {
+    line-height: 0.8em;
     display: block;
+    font-weight: bold;
     margin-top: 20px;
     width: 100%;
-    font-size: 1.6em;
+    font-size: 1.7em;
+    padding-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid black;
 }
 
 .content .selector {
-    font-weight: 100;
-    margin-top: 20px;
+    margin-top: 30px;
     width: 100%;
 }
 
-.selector .selector_item {    
+.selector .selector_item {  
+    border: 1px solid rgb(58, 145, 232);
+    font-family: Helvetica;
+    font-size: 1.1em;
     display: inline-block;
+    width: 362px;
     margin: 0;
-    margin-right: 3px;
     padding: 8px 18px 8px 18px;
-    margin-bottom: 2px solid rgb(58, 145, 232);
+    color: rgb(58, 145, 232);
+    text-align: center;
+}
+
+.content .selector #selector_item_1{
+    background-color: rgb(58, 145, 232);
+    color: #fff;
+    border-radius: 6px 0 0 6px;
+}
+.content .selector #selector_item_2 {
+    border-left: 0;
+    border-right: 0;
+    width: 364px;/*для баланса в ширине*/
+}
+
+.content .selector #selector_item_3{
+    border-radius: 0 6px 6px 0;
+}
+
+.selector .selector_item:hover {
+    background-color: rgb(58, 145, 232, 0.07);
+    cursor: pointer;
 }
