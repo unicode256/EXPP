@@ -5,7 +5,8 @@
 html {
     padding: 0;
     margin: 0;
-    background-color: #f2f8ff;
+    /*background-color: #f2f8ff;*/
+    background-color: #fff;
 }
 
 body {
@@ -14,9 +15,15 @@ body {
     font-family: Helvetica;
 }
 
+/*стили для панели навигации*/
+
 .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: #fff;
-    box-shadow: 0 6px 25px -5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
 }
 
 .navbar_content {
@@ -59,7 +66,8 @@ body {
 }
 
 #leftside span:hover {
-    color: rgb(29, 202, 34);
+    /*color: rgb(29, 202, 34);*/
+    color: rgb(58, 145, 232);
 }
 
 #rightside #create_post span {
@@ -70,12 +78,14 @@ body {
 }
 
 #rightside #location, #rightside #create_post{
-    color: rgb(29, 202, 34);
+    /*color: rgb(29, 202, 34);*/
+    color: rgb(58, 145, 232);
     border-right: 1px solid black; 
 }
 
 #rightside #location:hover, #rightside #create_post:hover {
-    color: rgb(65, 226, 70);
+    /*color: rgb(65, 226, 70);*/
+    color: rgb(94, 175, 255);
 }
 
 #rightside #auth {
@@ -83,5 +93,38 @@ body {
 }
 
 #rightside #auth:hover {
-    color: rgb(29, 202, 34);
+    color: rgb(58, 145, 232);
+}
+
+/*стили для контента*/
+
+.content, .content span, .content .selector, .content .selector .selector_item {
+    border: 1px solid black;
+}
+
+.content {
+    width: 1200px;
+    height: 1000px;
+    margin: 51px auto 0 auto;
+}
+
+.content .section_header {
+    display: block;
+    margin-top: 20px;
+    width: 100%;
+    font-size: 1.6em;
+}
+
+.content .selector {
+    font-weight: 100;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.selector .selector_item {    
+    display: inline-block;
+    margin: 0;
+    margin-right: 3px;
+    padding: 8px 18px 8px 18px;
+    margin-bottom: 2px solid rgb(58, 145, 232);
 }
