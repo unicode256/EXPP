@@ -156,3 +156,31 @@ body {
     background-color: rgb(58, 145, 232, 0.07);
     cursor: pointer;
 }
+
+.brandsection, .brandsection * {
+    /*border: 1px solid black;*/
+}
+
+.brandsection {
+    width: 100%;
+    margin-top: 30px;
+    overflow: auto;
+}
+
+.brandsection .brand_name {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 15px;
+    width: 238px;
+    float: left;
+}
+
+.brandsection .brand_name .brand_number {
+    margin-left: 8px;
+    color: rgb(163, 163, 163);
+}
+
+.brandsection .brand_name .name:hover {
+    color: rgb(58, 145, 232);
+    cursor: pointer;
+}
