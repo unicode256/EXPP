@@ -357,3 +357,18 @@ body {
     background-color: rgb(240, 240, 240);
     height: 560px;
 }
+
+.post_header img {
+    vertical-align: bottom;
+    background-color: #fff;
+    height: 10px;
+    margin-bottom: 5px;
+    margin-right: 3px;
+}
+
+.post_header .watches {
+    /* padding-left: 20px;
+    background: url("eye.jpg") no-repeat;
+    background-size: auto 22px;
+    background-position: -4px center; */
+}
