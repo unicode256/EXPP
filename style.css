@@ -349,13 +349,28 @@ body {
 }
 
 .rightside_car_info {
-    width: 69.59%;
+    /* width: 69.97%; */
+    width: 840px;
     float: left;
 }
 
 .selected_photo {
     background-color: rgb(240, 240, 240);
     height: 560px;
+    overflow: hidden;
+}
+
+.selected_photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 0 0;
+    transition-duration: 0.5s;
+    transition-property: transform;
+}
+
+.selected_photo img:hover {
+    transform: scale(1.15);
 }
 
 .post_header img {
