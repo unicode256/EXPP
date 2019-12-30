@@ -267,7 +267,7 @@ body {
     margin: 71px auto 0 auto;
 }
 
-.post_content * {
+.post_content {
     /* border: 1px solid black; */
 }
 
@@ -313,6 +313,53 @@ body {
     float: right;
 }
 
+.post_options {
+    display: block;
+    margin: 0;
+    float: left;
+    margin-top: 21px;
+}
+
+.post_options, .post_options * {
+    /* border: 1px solid black; */
+}
+
+.post_options button {
+    margin: 0;
+    display: block;
+    float: left;
+    width: 329px;
+    margin-right: 30px;
+    background-color: #fff;
+    padding: 9px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.post_options button:first-child {
+    color: rgb(58, 145, 232);
+    border: 1px solid rgb(58, 145, 232);
+    transition-property: background-color;
+    transition-duration: .2s;
+}
+
+.post_options button:hover:first-child {
+    background-color: rgba(58, 145, 232, 0.06);
+    cursor: pointer;
+}
+
+.post_options button:last-child {
+    color: rgb(186, 26, 26);
+    border: 1px solid rgb(186, 26, 26);
+    transition-property: background-color;
+    transition-duration: .2s;
+}
+
+.post_options button:hover:last-child {
+    background-color: rgba(186, 26, 26, 0.05);
+    cursor: pointer;
+}
+
 .top_part_car_info {
     overflow: auto;
     padding-bottom: 21px;
@@ -322,6 +369,10 @@ body {
 .car_info {
     margin-top: 42px;
     overflow: auto;
+}
+
+.leftside_car_info * {
+    /* border: 1px solid black; */
 }
 
 .leftside_car_info {
@@ -341,7 +392,7 @@ body {
 }
 
 .leftside_car_info .value {
-    width: 58.5%;
+    width: 50.5%;
 }
 
 .leftside_car_info .value_bold {
@@ -373,6 +424,26 @@ body {
     transform: scale(1.15);
 }
 
+.photos {
+    margin-top: 3px;
+    /* border: 1px solid red; */
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 840px;
+    height: 58px;
+    white-space: nowrap;
+
+}
+
+.photos img {
+    width: 104px;
+    margin-right: 3px;
+}
+
+.photos img:last-child {
+    margin: 0;
+}
+
 .post_header img {
     vertical-align: bottom;
     background-color: #fff;
@@ -386,4 +457,25 @@ body {
     background: url("eye.jpg") no-repeat;
     background-size: auto 22px;
     background-position: -4px center; */
+}
+
+.car_info {
+    /* border: 1px solid black; */
+}
+
+.car_info .show_vin {
+    display: block;
+    margin: 0;
+    color: #fff;
+    background-color: rgb(58, 145, 232);
+    border: none;
+    font-size: 1em;
+    padding: 10px;
+    width: 91.5%;
+    border-radius: 5px;
+}
+
+.car_info .show_vin:hover {
+    background-color: rgb(94, 175, 255);
+    cursor: pointer;
 }
