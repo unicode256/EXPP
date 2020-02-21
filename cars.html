@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <title>EXP</title>
+        <style>
+        * {
+            /* border: 1px solid black; */
+        }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="navbar_content">
+                <div id="leftside">
+                    <span>Продажа автомобилей</span>
+                </div>
+                <div id="rightside">
+                    <span id="auth">Войти</span>
+                    <span id="create_post">Подать объявление</span>
+                    <span id="location">Минск + 100 км</span>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="heading">
+                <p>Продажа автомобилей</p>
+                <p>Легковые автомобили</p>
+            </div>
+            <div class="car_filters">
+                <div class="select_state">
+                    <div id="all" class="active"><span>Все</span></div>
+                    <div id="new" class="hoverable"><span>Новые</span></div>
+                    <div id="used" class="hoverable"><span>С пробегом</span></div>
+                </div>
+                <form class="parameters">
+                    <div class="fields_parameters">
+                        <div class="column">
+                            <input type="text" name="car_mark" placeholder="Марка">
+                            <input type="select" name="car_body" class="half" placeholder="Кузов">
+                            <input type="select" name="car_transmission" class="half" placeholder="Коробка">
+                            <input type="select" name="car_year_from" class="half" placeholder="Год от">
+                            <input type="select" name="car_year_to" class="half" placeholder="до">
+                        </div>
+                        <div class="column">
+                            <input type="text" name="car_model" placeholder="Модель">
+                            <input type="select" name="car_engine" class="half" placeholder="Двигатель">
+                            <input type="select" name="car_drive" class="half" placeholder="Привод">
+                            <input type="select" name="car_mileage_from" class="half" placeholder="Пробег от, км">
+                            <input type="select" name="car_mileage_to" class="half" placeholder="до">
+                        </div>
+                        <div class="column">
+                            <input type="text" name="car_generation" placeholder="Поколение">
+                            <input type="select" name="car_engine_capacity_from" class="half" placeholder="Объём от, л">
+                            <input type="select" name="car_engine_capacity_to" class="half" placeholder="до">
+                            <input type="select" name="car_cost_from" class="half" placeholder="Цена от, BYN">
+                            <input type="select" name="car_cost_to" class="half" placeholder="до">
+                        </div>
+                    </div>
+                    <div class="additional_parameters">
+                        <!-- всему своё время -->
+                    </div>
+                    <div class="buttons">
+                        <button>Дополнительно</button>
+                        <input type="submit" value="Показать 100 000 объявлений">
+                    </div>
+                </form>
+            </div>
+            <div class="control_elements"></div>
+            <div class="pages_controls"></div>
+        </div>
+    </body>
+</html>
