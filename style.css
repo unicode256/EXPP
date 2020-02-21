@@ -483,6 +483,7 @@ body {
 /* список объявлений */
 .content .heading p {
     margin: 0;
+    /* text-align: center; */
 }
 
 
@@ -500,41 +501,46 @@ body {
 .content .car_filters {
     /* border: 1px solid black; */
     border-radius: 10px;
-    box-shadow:0px 0px 21px 0px rgba(240,240,240,1);
+    box-shadow:0px 2px 17px 0px rgba(230,230,230,1);
     margin-top: 25px;
     padding: 20px;
 }
 
-.content .car_filters .select_state {
+.select_state {
     display: flex;
+    font-size: 16px;
 }
 
-.content .car_filters .select_state div:first-child {
+.select_state div:first-child {
     border-top-left-radius: 11px;
     border-bottom-left-radius: 11px;
 }
 
-.content .car_filters .select_state div:last-child {
+.select_state div:last-child {
     border-top-right-radius: 11px;
     border-bottom-right-radius: 11px;
+}
+
+.select_state div {
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 128, 255, 0.07);
+    color: rgb(17, 136, 255);
+    cursor: pointer;
+    /* border: 1px solid black; */
 }
 
 .content .car_filters .select_state div {
     padding-top: 13px;
     padding-bottom: 13px;
-    width: 100%;
-    text-align: center;
-    background-color: rgba(0, 128, 255, 0.07);
-    color: rgb(17, 136, 255);
-    /* border: 1px solid black; */
 }
 
-.content .car_filters .select_state .active {
+.select_state .active {
     background-color: rgba(0, 128, 255, 0.15);
 }
 
-.content .car_filters .select_state .hoverable:hover {
-    background-color: rgba(0, 128, 255, 0.1);
+.select_state .hoverable:hover {
+    background-color: rgba(0, 128, 255, 0.15);
 }
 
 .content .parameters {
@@ -548,7 +554,7 @@ body {
 
 .content .parameters .fields_parameters .column {
     /* flex: 1 1 auto; */
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 32%;
     display: flex;
     flex-wrap: wrap;
@@ -561,8 +567,14 @@ body {
     font-size: 15px;
     box-sizing: border-box;
     outline: none;
-    padding: 8px 0 8px 6px;
+    padding: 9px 0 9px 7px;
     margin-bottom: 15px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 8px;
+}
+
+.content .parameters .fields_parameters .column input::-webkit-input-placeholder{
+    color: rgb(200, 200, 200);
 }
 
 .content .parameters .fields_parameters .column .half{
@@ -579,12 +591,150 @@ body {
     outline: none;
     margin: 0;
     cursor: pointer;
+    border: none;
+    font-size: 15px;
+    padding-top: 9px;
+    padding-bottom: 9px;
 }
 
 .content .parameters .buttons button {
     float: left;
+    color: rgb(17, 136, 255);
+    background-color: #fff;
+}
+
+.content .parameters .buttons button:hover {
+    color: rgba(17, 136, 255, 0.7);
 }
 
 .content .parameters .buttons input {
     float: right;
+    width: 371px;
+    background-color: rgba(0, 128, 255, 0.07);
+    color: rgb(17, 136, 255);
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.content .parameters .buttons input:hover {
+    background-color: rgba(0, 128, 255, 0.15);
+}
+
+.content .control_elements, .content .control_elements * {
+    /* border: 1px solid black; */
+}
+
+.content .control_elements {
+    margin-top: 20px;
+    /* padding: 10px 20px 10px 20px; */
+    padding: 20px;
+    overflow: hidden;
+    overflow: auto;
+    box-shadow:0px 3px 20px 0px rgba(230,230,230,1);
+    border-radius: 10px;
+
+}
+
+.content .control_elements input {
+    font-size: 15px;
+    margin: 0;
+    padding: 9px 0 9px 7px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 8px;
+    width: 130px;
+    box-sizing: border-box;
+    outline: none;
+    display: block;
+    float: left;
+    margin-right: 11px;
+}
+
+.content .control_elements input::-webkit-input-placeholder{
+    color: rgb(200, 200, 200);
+}
+
+.content .control_elements input[name="time"]{
+    width: 186px;
+}
+
+.content .control_elements .select_state {
+    float: right;
+    width: 240px;
+}
+
+.content .control_elements .select_state div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.posts, .posts * {
+    /* border: 1px solid black; */
+    margin: 0;
+    padding: 0;
+}
+
+.posts {
+    margin-top: 20px;
+}
+
+.posts .car_photos img {
+    width: 270px;
+    display: block;
+}
+.posts .car_photos {
+    /* width: 275px; */
+}
+
+.posts .post {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(190, 190, 190);
+    box-shadow:0px 3px 20px 0px rgba(230,230,230,1);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.posts .post .short_info {
+    width: 75%;
+}
+
+.posts .post .short_info .info_block {
+    display: flex;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+.posts .post .short_info .info_block p:first-child {
+    width: 200px;
+}
+
+.posts .post .short_info .info_block.i1 .heading {
+    width: 280px;
+}
+
+.posts .post .short_info .info_block.i1 .cost {
+    margin-left: 100px;
+    margin-right: 50px;
+    background-color: rgba(0, 128, 255, 0.15);
+    color: rgb(17, 136, 255);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 140px;
+    border-radius: 10px;
+    margin-top: -9px;
+    font-size: 16px;
+}
+
+.posts .post .short_info .info_block.i1 p {
+    font-size: 17px;
+    font-weight: 400;
+    color: #000;
+
+}
+
+.posts .post .short_info .info_block.i1 p:last-child {
+    margin-left: 50px;
 }
