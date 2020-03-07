@@ -1,11 +1,6 @@
-/*.navbar_content, #leftside, #rightside, span {
-    border: 1px solid black;
-}*/
-
 html {
     padding: 0;
     margin: 0;
-    /* background-color: #f2f8ff; */
     background-color: #fff;
 }
 
@@ -13,9 +8,14 @@ body {
     padding: 0;
     margin: 0;
     font-family: Helvetica;
+    font-size: 16px;
 }
 
 /*стили для панели навигации*/
+
+.navbar * {
+    /* border: 1px solid black; */
+}
 
 .navbar {
     position: fixed;
@@ -26,73 +26,59 @@ body {
     box-shadow: 0 6px 20px -5px rgba(0, 0, 0, 0.1);
 }
 
+.navbar_content #leftside, .navbar_content #rightside{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navbar_content #leftside {
+    width: 45%;
+}
+
+.navbar_content #rightside {
+    width: 459px;
+}
+
 .navbar_content {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    overflow: auto;
+    display: flex;
+    justify-content: space-between;
 }
 
-#leftside, #rightside {
-    width: 594px;/*исправить на 600*/
-}
-
-#leftside, #leftside span {
-    float: left;
-}
-
-#rightside, #rightside span {
-    float: right;
-}
-
-#rightside {
-    overflow: auto;
-    margin-top: 9px;
-}
-
-#leftside span, #rightside span {
-    display: block;
-    font-size: 1.1em;
-    padding: 15px 10px 15px 0;
+.navbar_content a {
     cursor: pointer;
 }
 
-#rightside span {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 6px;
-    padding-bottom: 6px;
+.navbar_content #leftside a {
+    margin-right: 10%;
+    color: rgb(17, 136, 255);
 }
 
-#leftside span:hover {
-    /*color: rgb(29, 202, 34);*/
-    color: rgb(58, 145, 232);
+.navbar_content #rightside {
+    color: rgb(17, 136, 255);
 }
 
-#rightside #create_post span {
-    display: block;
-    padding: 0;
-    margin: 0;
-    float: left;
+.navbar_content #rightside #location:hover, .navbar_content #rightside #auth:hover {
+    color: rgba(17, 136, 255, 0.7);
 }
 
-#rightside #location, #rightside #create_post{
-    /*color: rgb(29, 202, 34);*/
-    color: rgb(58, 145, 232);
-    border-right: 1px solid black; 
+.navbar_content #rightside #create_post {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 250px;
+    text-align: center;
+    background-color: rgba(0, 128, 255, 0.07);
+    color: rgb(17, 136, 255);
+    border-radius: 8px;
 }
 
-#rightside #location:hover, #rightside #create_post:hover {
-    /*color: rgb(65, 226, 70);*/
-    color: rgb(94, 175, 255);
-}
-
-#rightside #auth {
-    padding-right: 0;
-}
-
-#rightside #auth:hover {
-    color: rgb(58, 145, 232);
+.navbar_content #rightside #create_post:hover {
+    background-color: rgba(0, 128, 255, 0.15);
 }
 
 /*стили для контента*/
@@ -104,7 +90,7 @@ body {
 .content {
     width: 1200px;
     height: 1000px;
-    margin: 81px auto 0 auto;
+    margin: 91px auto 0 auto;
     font-family: Helvetica;
 }
 
