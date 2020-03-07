@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <meta charset="UTF-8">
+        <title>EXP</title>
+        <style>
+        * {
+            border: 1px solid black;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="navbar_content">
+                <div id="leftside">
+                    <a>Автомобили</a>
+                    <a>Мототехника</a>
+                    <a>Спецтехника</a>
+                    <a>Запчасти</a>
+                </div>
+                <div id="rightside">
+                    <a id="location">Минск + 100 км</a>
+                    <a id="create_post">Создать объявление</a>
+                    <a id="auth">Войти</a>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="creating_ad_selector component">
+                <div class="select_state">
+                    <div id="cars" class="active"><span>Легковые</span></div>
+                    <div id="commercial" class="hoverable"><span>Коммерческие</span></div>
+                    <div id="moto" class="hoverable"><span>Мото</span></div>
+                    <div id="parts" class="hoverable"><span>Запчасти</span></div>
+                </div>
+            </div>
+            <div class="ad_creator">
+                <div><p>Марка вашего автомобиля:</p><input type="text" placeholder="Не выбрано"></div>
+                <div><p>Модель вашего автомобиля:</p><input type="text" placeholder="Не выбрано"></div>
+                <div><p>Год выпуска:</p><input type="text" placeholder="Не выбрано"></div>
+                <div><p>Поколение:</p><input type="text" placeholder="Не выбрано"></div>
+                <div><p>Тип кузова:</p><input type="text" placeholder="Не выбрано"></div>
+                <div><p>Состояние:</p><input type="text" placeholder="Не выбрано"></div>
+                <div><p>Цена:</p><input type="text" placeholder="Не выбрано"></div>
+                <div><p>Текст объявления:</p><input type="text" placeholder="Не выбрано"></div>
+
+            </div>
+        </div>
+    </body>
+</html>

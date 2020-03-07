@@ -615,7 +615,6 @@ body {
     margin-top: 20px;
     /* padding: 10px 20px 10px 20px; */
     padding: 20px;
-    overflow: hidden;
     overflow: auto;
     box-shadow:0px 3px 20px 0px rgba(230,230,230,1);
     border-radius: 10px;
@@ -727,3 +726,50 @@ body {
 
 /* подача объявления */
 
+.component {
+    border-radius: 10px;
+    box-shadow:0px 2px 17px 0px rgba(230,230,230,1);
+    margin-top: 25px;
+    padding: 20px;
+}
+
+.content .creating_ad_selector {
+    padding: 20px;
+    margin-top: 5px;
+}
+
+.content .creating_ad_selector .select_state div {
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.content .ad_creator {
+    padding: 20px;
+}
+
+.content .ad_creator * {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+.content .ad_creator p, .content .ad_creator input {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.content .ad_creator div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content .ad_creator div p {
+    width: 40%;
+}
+
+.content .ad_creator div input {
+    padding: 9px 0 9px 7px;
+    border-radius: 11px;
+    outline: none;
+    width: 50%;
+}
