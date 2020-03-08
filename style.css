@@ -29,7 +29,6 @@ body {
 .navbar_content #leftside, .navbar_content #rightside{
     display: flex;
     align-items: center;
-    justify-content: space-between;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -40,6 +39,7 @@ body {
 
 .navbar_content #rightside {
     width: 459px;
+    justify-content: space-between;
 }
 
 .navbar_content {
@@ -55,7 +55,7 @@ body {
 }
 
 .navbar_content #leftside a {
-    margin-right: 10%;
+    margin-right: 13%;
     color: rgb(17, 136, 255);
 }
 
